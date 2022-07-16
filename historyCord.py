@@ -49,15 +49,6 @@ def menu():
             print('Exiting\n')
             exit(0)
 
-# Picks random 3, 6 digit numbers and appends them to a single str var
-def combiner():
-    # Open pre-generated 6 digit list
-    lines = open('numbers.txt').read().splitlines()
-    list = str(random.choice(lines))
-    return list
-    # Closes the file
-    lines.close()
-
 # Manual search
 def manualBuilder():
     print('Example: https://media.discordapp.net/attachments/<useruuid>/<secondaryuuid>/<unknown.png>')
